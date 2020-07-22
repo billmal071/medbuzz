@@ -74,7 +74,7 @@ img {
     background-color: var(--medbuzz-dark-blue);
 }
 
-/* description */
+/* medbuzz info */
 .pt-6 {
     padding-top: 220px;
 }
@@ -242,7 +242,7 @@ input[type="text"] {
     font-size: 36px;
     line-height: 48px;
     text-align: center;
-    width: 524px;
+    width: 600px;
 }
 
 #quote-name {
