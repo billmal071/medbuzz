@@ -20,8 +20,8 @@
 
 <body>
   <!-- navbar -->
-  <header class="px-sm-5 pt-5">
-    <nav class="d-flex flex-row justify-content-between">
+  <header class="px-sm-5 pt-md-5 pt-3">
+    <nav class="d-flex flex-row justify-content-between" uk-scrollspy="cls: uk-animation-fade; target: .uk-card; delay: 500;">
       <div class="d-flex flex-row"><svg width="47" height="59" viewBox="0 0 47 59" fill="none"
           xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
           <rect width="47" height="59" fill="url(#pattern0)" />
@@ -52,7 +52,7 @@
   <main class="">
     <!-- medbuzz introduction -->
     <section class="d-flex flex-md-row flex-column px-md-5 px-2">
-      <div class="pt-6">
+      <div class="pt-6" uk-scrollspy="cls: uk-animation-slide-right;">
         <h3 id="hero-text">
           Download the <span class="medbuzz">Med<span class="buzz">Buzz</span></span> app & start your health journey
         </h3>
@@ -107,7 +107,7 @@
         </div>
       </div>
 
-      <div style="position: relative;">
+      <div style="position: relative;" uk-scrollspy="cls: uk-animation-slide-left;">
         <img src="assets/images/Group-160.svg" loading="lazy" alt="medbuzz phone image" class="img-fluid" id="posimg-1">
         <img src="assets/images/Ellipse-33.svg" loading="lazy" alt="Ellipse" class="img-fluid d-none" id="posimg-2">
         <img src="assets/images/Ellipse-34.svg" loading="lazy" alt="ellipse" class="img-fluid d-none" id="posimg-3">
@@ -116,10 +116,12 @@
     <!-- key features -->
     <section class="bg-color">
       <div class="d-flex flex-md-row flex-column justify-content-center">
-        <div>
+        <div uk-scrollspy="cls: uk-animation-slide-bottom; target: >img; delay: 300;">
           <img src="assets/images/Group-150.svg" loading="lazy" alt="medbuzz phone image">
         </div>
-        <div id="margin-top">
+        <div id="margin-top" data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000">
           <h3 class="text-capitalize text-header"><span id="border-bottom">our k</span>ey features</h3>
           <p class="text-capitalize text-blue"><img src="assets/images/Group-116.svg" loading="lazy"
               class="mr-3 img-fluid" alt="heart"> fitness tracker</p>
@@ -140,10 +142,10 @@
       </h3>
       <div class="d-flex flex-column justify-content-center">
         <div class="d-flex flex-md-row flex-column justify-content-center container">
-          <div>
+          <div data-aos="flip-left">
             <img src="assets/images/undraw_setup_obqo1.svg" loading="lazy" alt="" class="img-fluid mr-md-5">
           </div>         
-          <div class="align-self-center pl-md-5 mt-3 mt-md-0">
+          <div class="align-self-center pl-md-5 mt-3 mt-md-0" data-aos="flip-right">
             <h4 class="text-capitalize font-weight-bold">set up reminders</h4>
             <p>
               MedBuzz allows you set up reminders for your medications, fitness and diet plans using push notifications
@@ -153,23 +155,23 @@
         </div>
 
         <div class="d-flex flex-md-row flex-column justify-content-center container">
-          <div class="align-self-center pr-md-5 order-text">
+          <div class="align-self-center pr-md-5 order-text" data-aos="flip-left">
             <h4 class="text-capitalize font-weight-bold text-right pr-md-5 mr-md-5">fitness and diet record</h4>
             <p class="pr-md-5 mr-md-5 text-right">
               MedBuzz allows you monitor your fitness and diet progress. We also suggest better ways in which you can
               meet your target faster.
             </p>
           </div>
-          <div class="order-img">
+          <div class="order-img" data-aos="flip-right">
             <img src="assets/images/3739679-1.svg" loading="lazy" alt="" class="img-fluid">
           </div>
         </div>
 
         <div class="d-flex flex-md-row flex-column justify-content-center container">
-          <div>
+          <div data-aos="flip-left">
             <img src="assets/images/6274-1.svg" loading="lazy" alt="" class="img-fluid mr-md-5">
           </div>         
-          <div class="align-self-center pl-md-5">
+          <div class="align-self-center pl-md-5" data-aos="flip-right">
             <h4 class="text-capitalize font-weight-bold">book doctors appointment</h4>
             <p>
               MedBuzz allows you book and confirm your doctor’s appointment from the comfort of your app. Reminders can
@@ -182,7 +184,7 @@
     <!-- contact -->
     <section class="bg-blue">
       <div class="d-flex flex-md-row flex-column justify-content-center pl-md-5">
-        <div class="align-self-center pl-md-4 pl-2">
+        <div class="align-self-center pl-md-4 pl-2" data-aos="flip-up">
           <h3 class="text-capitalize text-white text-header mt-3 mb-4"><span id="border-bottom-3">get in</span> touch with
             us
           </h3>
@@ -195,14 +197,16 @@
             </div>
           </div>
         </div>
-        <div>
+        <div data-aos="flip-down">
           <img src="assets/images/Group-151.svg" alt="" loading="lazy" class="img-fluid">
         </div>
       </div>
     </section>
     <!-- quote -->
     <section id="bg-image">
-      <div class="d-flex flex-column justify-content-center align-items-center h-100">
+      <div class="d-flex flex-column justify-content-center align-items-center h-100" data-aos="fade-down"
+      data-aos-easing="linear"
+      data-aos-duration="1500">
         <h2 class="text-capitalize text-white text-center" id="quote">
           <img src="assets/images/open-quote.svg" alt="open quote" loading="lazy" class="img-fluid mr-2">
           A Journey Of A Thousand Miles Begins With A Single Step
@@ -215,7 +219,7 @@
 
   <!-- footer -->
   <footer class="d-flex flex-md-row flex-column justify-content-between align-items-md-center px-6 py-6" id="footer">
-    <div>
+    <div data-aos="zoom-in-up">
       <a href="">
         <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path
@@ -238,20 +242,22 @@
         </svg>
       </a>
     </div>
-    <div>
+    <div data-aos="zoom-in-left">
       <p class="text-white mt-4 mt-md-0">Copyright. MedBuzz 2020. All rights reserved.</p>
     </div>
-    <div>
+    <div data-aos="zoom-out-up">
       <p class="text-white">Terms of service/Privacy policy.</p>
     </div>
   </footer>
-
 
   <!-- UIkit JS -->
   <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.5/dist/js/uikit.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.5/dist/js/uikit-icons.min.js"></script>
   <!-- AOS -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   <!-- bootstrap -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
