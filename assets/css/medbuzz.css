@@ -15,6 +15,7 @@ html {
 
 body {
     font-family: 'Playfair Display', serif;
+    overflow-x: hidden;
 }
 
 /* custom scroll */
@@ -49,8 +50,13 @@ img {
 #logo {
     color: var(--medbuzz-blue);
     font-style: normal;
+    font-weight: 100;
     font-size: 36px;
     line-height: 48px;
+}
+
+.bg-dark-blue {
+    background-color: var(--medbuzz-dark-blue);
 }
 
 #download-btn {
@@ -96,6 +102,7 @@ img {
     font-weight: normal;
     font-size: 18px;
     line-height: 29px;
+    margin-top: 48px;
 }
 
 .btn {
@@ -185,6 +192,11 @@ img {
     color: var(--medbuzz-blue);
 }
 
+/* how the app works */
+.text-box {
+    width: 376px;
+}
+
 /* contact */
 .bg-blue {
     background-color: var(--medbuzz-blue);
@@ -196,6 +208,8 @@ img {
     font-weight: normal;
     font-size: 24px;
     line-height: 36px;
+    margin-top: 50px;
+    margin-bottom: 48px;
 }
 
 input[type="text"] {
@@ -335,6 +349,10 @@ input[type="text"] {
         text-align: left !important;
     }
 
+    .text-box {
+        width: 280px;
+    }
+
     /* contact */
     .text-header {
         font-size: 24px;
@@ -343,6 +361,8 @@ input[type="text"] {
     #text-contact {
         font-size: 18px;
         line-height: 20px;
+        margin-top: 0;
+        margin-bottom: 10px;
     }
 
     /* quote */
