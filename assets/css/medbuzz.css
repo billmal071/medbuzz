@@ -55,6 +55,10 @@ img {
     line-height: 48px;
 }
 
+.bg-dark-blue {
+    background-color: var(--medbuzz-dark-blue);
+}
+
 #download-btn {
     background-color: var(--medbuzz-blue);
     padding: 10px 15px;
