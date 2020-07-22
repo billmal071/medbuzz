@@ -141,23 +141,6 @@ img {
     position: relative;
     top: -120px;
     z-index: 3;
-    width: 1500px;
-    height: 100%;
-}
-
-#posimg-2,
-#posimg-3 {
-    position: relative;
-}
-
-#posimg-2 {
-    left: 1010px;
-    top: 221px;
-}
-
-#posimg-3 {
-    left: 788px;
-    top: 445px;
 }
 
 /* key features */
@@ -321,6 +304,7 @@ input[type="text"] {
 
     .btn-gray {
         font-size: 10px;
+        display: none;
     }
 
     .btn-white {
@@ -419,7 +403,7 @@ input[type="text"] {
     }
 }
 
-@media only screen and (max-width: 1024px) and (min-width: 769px) {
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
 
     /* medbuzz */
     .pt-6 {
@@ -436,7 +420,25 @@ input[type="text"] {
     }
 }
 
-@media only screen and (max-width: 850px) and (min-width: 769px) {
+@media only screen and (max-width: 920px) and (min-width: 768px) {
+
+    /* medbuzz info */
+    #hero-description {
+        margin-top: 20px;
+    }
+
+    .btn-gray {
+        display: none;
+    }
+
+    .btn-white {
+        font-size: 12px;
+    }
+
+    /* key features */
+    .text-blue {
+        font-size: 16px;
+    }
 
     /* contact */
     .text-header {
