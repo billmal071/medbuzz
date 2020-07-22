@@ -1,0 +1,431 @@
+:root {
+    --medbuzz-blue: #617ADC;
+    --medbuzz-black: #353333;
+    --medbuzz-dark-blue: #232F5F;
+    --medbuzz-gold: #FFAA00;
+    --medbuzz-grey: #B2AFAF;
+    --medbuzz-white: #FFFFFF;
+    --medbuzz-gray: #E3E2E2;
+    --medbuzz-dark-white: #E5E5E5;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+}
+
+/* custom scroll */
+/* width */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 7px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--medbuzz-blue);
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--medbuzz-dark-blue);
+}
+
+img {
+    object-fit: cover;
+    object-position: top;
+}
+
+/* nav */
+#logo {
+    color: var(--medbuzz-blue);
+    font-style: normal;
+    font-size: 36px;
+    line-height: 48px;
+}
+
+#download-btn {
+    background-color: var(--medbuzz-blue);
+    padding: 10px 15px;
+    border-radius: 7px;
+    /* text */
+    font-style: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--medbuzz-white);
+}
+
+#download-btn:hover {
+    background-color: var(--medbuzz-dark-blue);
+}
+
+/* description */
+.pt-6 {
+    padding-top: 220px;
+}
+
+#hero-text {
+    font-style: normal;
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+    font-size: 43px;
+    line-height: 57px;
+    color: var(--medbuzz-black)
+}
+
+.medbuzz {
+    color: var(--medbuzz-blue);
+}
+
+.buzz {
+    font-weight: 200;
+}
+
+#hero-description {
+    font-family: 'Muli', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 29px;
+}
+
+.btn {
+    transition: 0.8s;
+}
+
+#btn-apple,
+#btn-google {
+    background-color: var(--medbuzz-dark-blue);
+    text-align: left;
+    font-family: 'Muli', serif;
+    padding: 7px 18px !important;
+}
+
+#btn-apple:hover,
+#btn-google:hover {
+    background-color: var(--medbuzz-blue);
+}
+
+.btn-gray {
+    color: var(--medbuzz-gray);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.btn-white {
+    color: var(--medbuzz-white);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+#posimg-1 {
+    position: relative;
+    top: -120px;
+    z-index: 3;
+    width: 1500px;
+    height: 100%;
+}
+
+#posimg-2,
+#posimg-3 {
+    position: relative;
+}
+
+#posimg-2 {
+    left: 1010px;
+    top: 221px;
+}
+
+#posimg-3 {
+    left: 788px;
+    top: 445px;
+}
+
+/* key features */
+.bg-color {
+    background-color: var(--medbuzz-dark-white);
+}
+
+#margin-top {
+    margin-top: 216px;
+}
+
+#border-bottom,
+#border-bottom-2,
+#border-bottom-3 {
+    border-bottom: 2px solid var(--medbuzz-gold) !important;
+}
+
+.text-header {
+    font-family: 'Playfair Display', serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 45px;
+}
+
+.text-blue {
+    font-family: 'Muli', serif;
+    font-style: normal;
+    font-weight: 450;
+    font-size: 22px;
+    line-height: 28px;
+    color: var(--medbuzz-blue);
+}
+
+/* contact */
+.bg-blue {
+    background-color: var(--medbuzz-blue);
+}
+
+#text-contact {
+    font-family: 'Muli', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+input[type="text"] {
+    color: var(--medbuzz-grey);
+    font-family: 'Muli', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.btn-gold {
+    background-color: var(--medbuzz-gold) !important;
+}
+
+/* quote */
+#bg-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/Group-138.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 546px;
+}
+
+#quote {
+    font-family: 'Playfair Display', serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+    width: 524px;
+}
+
+#quote-name {
+    font-family: 'Muli';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 28px;
+    color: var(--medbuzz-white);
+    text-align: center;
+    text-transform: capitalize;
+}
+
+/* footer */
+#footer {
+    background-color: var(--medbuzz-blue);
+
+}
+
+.py-6 {
+    padding-top: 52px;
+    padding-bottom: 52px;
+}
+
+.px-6 {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.order-img {
+    order: 2;
+}  
+
+.order-text {
+    order: 1;
+}
+
+/* media queries */
+@media only screen and (max-width: 500px) {
+
+    .order-img {
+        order: 1;
+    }  
+
+    .order-text {
+        order: 2;
+    }
+    
+    /* navbar */
+    #logo {
+        font-size: 20px;
+    }
+
+    #download-btn {
+        padding: 5px 8px;
+        font-style: normal;
+        font-size: 12px;
+        line-height: 2px;
+        margin-right: 3px;
+    }
+
+    /* medbuzz introduction */
+    .pt-6 {
+        padding-top: 30px;
+    }
+
+    #hero-text {
+        font-size: 25px;
+        line-height: 24px;
+    }
+
+    #hero-description {
+        font-size: 17px;
+        line-height: 20px;
+    }
+
+    .btn-gray {
+        font-size: 10px;
+    }
+
+    .btn-white {
+        font-size: 14px;
+        line-height: 12px;
+    }
+
+    #posimg-1 {
+        top: 10px;
+    }
+
+
+    /* key features */
+    #margin-top {
+        margin-top: 30px; 
+        padding-left: 20px;
+    }
+
+    .text-blue {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    /* how the app works */
+    h4.text-right, p.text-right {
+        text-align: left !important;
+    }
+
+    /* contact */
+    .text-header {
+        font-size: 24px;
+    }
+
+    #text-contact {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    /* quote */
+    #quote {
+        width: 290px;
+        font-size: 25px;
+        line-height: 25px;
+    }
+
+    #quote-name {
+        font-size: 18px;
+    }
+
+    /* footer */
+    .px-6 {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 501px) {
+    .order-img {
+        order: 1;
+    }  
+
+    .order-text {
+        order: 2;
+    }
+
+    /* medbuzz intro */
+    .pt-6 {
+        padding-top: 40px;
+    }
+
+    #posimg-1 {
+        top: 10px;
+    }
+
+    /* key features */
+    #margin-top {
+        margin-top: 50px;
+        padding-left: 30px;
+    }
+
+    /* quote */
+    #quote {
+        width: 450px;
+    }
+
+    /* footer */
+    .px-6 {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+
+    /* medbuzz */
+    .pt-6 {
+        padding-top: 100px;
+    }
+
+    #hero-text {
+        font-size: 35px;
+        line-height: 40px;
+    }
+
+    #posimg-1 {
+        top: -50px;
+    }
+}
+
+@media only screen and (max-width: 850px) and (min-width: 769px) {
+
+    /* contact */
+    .text-header {
+        font-size: 32px;
+    }
+
+    /* footer */
+    .px-6 {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+}

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.typekit.net/wil5dsd.css" />
+  <link rel="stylesheet" href="assets/css/medbuzz.css">
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- UIkit CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.5/dist/css/uikit.min.css" />
+  <title>MedBuzz</title>
+</head>
+
+<body>
+  <!-- navbar -->
+  <header class="px-sm-5 pt-5">
+    <nav class="d-flex flex-row justify-content-between">
+      <div class="d-flex flex-row"><svg width="47" height="59" viewBox="0 0 47 59" fill="none"
+          xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <rect width="47" height="59" fill="url(#pattern0)" />
+          <defs>
+            <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+              <use xlink:href="#image0" transform="translate(0 -0.00306478) scale(0.00273973 0.00218249)" />
+            </pattern>
+            <image id="image0" width="365" height="461"
+              xlink:href="data:image/png;base64,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" />
+          </defs>
+        </svg>
+        <p id="logo" class=""><span class="font-weight-bold ml-2">Med</span>Buzz</p>
+      </div>
+
+      <div class="d-flex flex-row align-items-center pt-3">
+        <a class="text-capitalize btn" id="download-btn">download now <span class="ml-2">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M10.09 15.59L11.5 17L16.5 12L11.5 7L10.09 8.41L12.67 11H3V13H12.67L10.09 15.59ZM19 3H5C4.46957 3 3.96086 3.21071 3.58579 3.58579C3.21071 3.96086 3 4.46957 3 5V9H5V5H19V19H5V15H3V19C3 19.5304 3.21071 20.0391 3.58579 20.4142C3.96086 20.7893 4.46957 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3Z"
+                fill="white" />
+            </svg>
+          </span>
+        </a>
+      </div>
+    </nav>
+  </header>
+  <!-- main -->
+  <main class="">
+    <!-- medbuzz introduction -->
+    <section class="d-flex flex-md-row flex-column px-md-5 px-2">
+      <div class="pt-6">
+        <h3 id="hero-text">
+          Download the <span class="medbuzz">Med<span class="buzz">Buzz</span></span> app & start your health journey
+        </h3>
+        <p id="hero-description">
+          The <span class="medbuzz">Med<span class="buzz">Buzz</span></span> app offers health reminders for your
+          medical appointments, medications, fitness and diet plans all
+          at your fingertips
+        </p>
+        <div class="d-flex flex-row mt-md-5 mt-2">
+          <button class="d-flex flex-row align-items-center btn mr-4" id="btn-apple">
+            <span>
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M26.2201 22.4146C25.8509 23.2753 25.3948 24.096 24.8588 24.864C24.1428 25.8866 23.5548 26.5933 23.1041 26.9866C22.4041 27.6293 21.6521 27.96 20.8481 27.9786C20.2721 27.9786 19.5761 27.8146 18.7654 27.4813C17.9521 27.1493 17.2054 26.9866 16.5214 26.9866C15.8054 26.9866 15.0374 27.1493 14.2148 27.4813C13.3934 27.8146 12.7294 27.9893 12.2214 28.0053C11.4521 28.0386 10.6828 27.7 9.91611 26.9866C9.42677 26.56 8.81477 25.8266 8.08011 24.7893C7.29344 23.684 6.64677 22.3973 6.14011 20.9346C5.59744 19.352 5.32544 17.8213 5.32544 16.3386C5.32544 14.6413 5.69211 13.176 6.42677 11.9493C6.98244 10.9859 7.77684 10.1819 8.73344 9.61462C9.67673 9.04884 10.7536 8.7442 11.8534 8.73195C12.4668 8.73195 13.2708 8.92128 14.2668 9.29462C15.2628 9.66795 15.9028 9.85728 16.1814 9.85728C16.3921 9.85728 17.1001 9.63462 18.3054 9.19328C19.4428 8.78395 20.4028 8.61462 21.1894 8.68128C23.3228 8.85328 24.9241 9.69328 25.9894 11.208C24.0828 12.364 23.1401 13.9813 23.1588 16.0573C23.1748 17.6746 23.7628 19.02 24.9148 20.088C25.4241 20.5753 26.0183 20.9653 26.6681 21.2386C26.5268 21.648 26.3774 22.0386 26.2201 22.4146ZM21.3308 3.17328C21.3308 4.43995 20.8668 5.62395 19.9454 6.71862C18.8308 8.01995 17.4841 8.77328 16.0241 8.65462C16.005 8.49534 15.9957 8.33504 15.9961 8.17462C15.9961 6.95728 16.5241 5.65595 17.4668 4.59062C17.9361 4.05195 18.5334 3.60262 19.2574 3.24528C19.9801 2.89328 20.6628 2.69862 21.3054 2.66528C21.3228 2.83595 21.3308 3.00528 21.3308 3.17328Z"
+                  fill="white" />
+              </svg>
+            </span>
+            <span class="d-flex flex-column ml-2">
+              <span class="btn-gray">Download it on the</span>
+              <span class="btn-white text-capitalize">app store</span>
+            </span>
+          </button>
+
+          <button class="d-flex flex-row align-items-center btn" id="btn-google">
+            <span>
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0)">
+                  <path
+                    d="M18.3901 15.0939L23.09 11.0047C14.5056 6.58169 1.82088 0.0927991 1.10401 0L1.04663 0.00511995L18.3901 15.0939Z"
+                    fill="#08B059" />
+                  <path d="M0.005885 0.9104L0 0.96V31.0397L0.00551719 31.0874L17.349 15.9989L0.005885 0.9104Z"
+                    fill="#1BB899" />
+                  <path
+                    d="M18.3923 16.906L1.04956 31.9945L1.104 31.9999C1.82417 31.9001 14.5067 25.4144 23.09 20.9933L18.3923 16.906Z"
+                    fill="#F04F3E" />
+                  <path
+                    d="M30.8963 15.0399C30.8963 15.0399 28.1848 13.6326 24.3989 11.6799L19.4324 16.0012L24.3967 20.3202C28.1837 18.3672 30.8963 16.9599 30.8963 16.9599C31.4874 16.6898 31.9998 16.5301 31.9998 15.9999C31.9998 15.47 31.4172 15.2879 30.8963 15.0399Z"
+                    fill="#F99C1C" />
+                </g>
+                <defs>
+                  <clipPath id="clip0">
+                    <rect width="32" height="32" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </span>
+            <span class="d-flex flex-column ml-2">
+              <span class="btn-gray">Get it on</span>
+              <span class="btn-white text-capitalize">google play</span>
+            </span>
+          </button>
+        </div>
+      </div>
+
+      <div style="position: relative;">
+        <img src="assets/images/Group-160.svg" loading="lazy" alt="medbuzz phone image" class="img-fluid" id="posimg-1">
+        <img src="assets/images/Ellipse-33.svg" loading="lazy" alt="Ellipse" class="img-fluid d-none" id="posimg-2">
+        <img src="assets/images/Ellipse-34.svg" loading="lazy" alt="ellipse" class="img-fluid d-none" id="posimg-3">
+      </div>
+    </section>
+    <!-- key features -->
+    <section class="bg-color">
+      <div class="d-flex flex-md-row flex-column justify-content-center">
+        <div>
+          <img src="assets/images/Group-150.svg" loading="lazy" alt="medbuzz phone image">
+        </div>
+        <div id="margin-top">
+          <h3 class="text-capitalize text-header"><span id="border-bottom">our k</span>ey features</h3>
+          <p class="text-capitalize text-blue"><img src="assets/images/Group-116.svg" loading="lazy"
+              class="mr-3 img-fluid" alt="heart"> fitness tracker</p>
+          <p class="text-capitalize text-blue"><img src="assets/images/Group-120.svg" loading="lazy"
+              class="mr-3 img-fluid" alt="medication"> medication reminder</p>
+          <p class="text-capitalize text-blue"><img src="assets/images/Group-117.svg" loading="lazy"
+              class="mr-3 img-fluid" alt="sethoscope"> schedule doctor's appointment</p>
+          <p class="text-capitalize text-blue"><img src="assets/images/Group-118.svg" loading="lazy"
+              class="mr-3 img-fluid" alt="reminder"> setup reminders</p>
+          <p class="text-capitalize text-blue"><img src="assets/images/Group-119.svg" loading="lazy"
+              class="mr-3 img-fluid" alt="weight-scale"> diet plan</p>
+        </div>
+      </div>
+    </section>
+    <!-- how the app works -->
+    <section class="justify-content-center pt-5">
+      <h3 class="text-capitalize text-center text-header mt-3 mb-4"><span id="border-bottom-2">how t</span>he app works
+      </h3>
+      <div class="d-flex flex-column justify-content-center">
+        <div class="d-flex flex-md-row flex-column justify-content-center container">
+          <div>
+            <img src="assets/images/undraw_setup_obqo1.svg" loading="lazy" alt="" class="img-fluid mr-md-5">
+          </div>         
+          <div class="align-self-center pl-md-5 mt-3 mt-md-0">
+            <h4 class="text-capitalize font-weight-bold">set up reminders</h4>
+            <p>
+              MedBuzz allows you set up reminders for your medications, fitness and diet plans using push notifications
+              to notify you.
+            </p>
+          </div>
+        </div>
+
+        <div class="d-flex flex-md-row flex-column justify-content-center container">
+          <div class="align-self-center pr-md-5 order-text">
+            <h4 class="text-capitalize font-weight-bold text-right pr-md-5 mr-md-5">fitness and diet record</h4>
+            <p class="pr-md-5 mr-md-5 text-right">
+              MedBuzz allows you monitor your fitness and diet progress. We also suggest better ways in which you can
+              meet your target faster.
+            </p>
+          </div>
+          <div class="order-img">
+            <img src="assets/images/3739679-1.svg" loading="lazy" alt="" class="img-fluid">
+          </div>
+        </div>
+
+        <div class="d-flex flex-md-row flex-column justify-content-center container">
+          <div>
+            <img src="assets/images/6274-1.svg" loading="lazy" alt="" class="img-fluid mr-md-5">
+          </div>         
+          <div class="align-self-center pl-md-5">
+            <h4 class="text-capitalize font-weight-bold">book doctors appointment</h4>
+            <p>
+              MedBuzz allows you book and confirm your doctor’s appointment from the comfort of your app. Reminders can
+              also be set for it.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- contact -->
+    <section class="bg-blue">
+      <div class="d-flex flex-md-row flex-column justify-content-center pl-md-5">
+        <div class="align-self-center pl-md-4 pl-2">
+          <h3 class="text-capitalize text-white text-header mt-3 mb-4"><span id="border-bottom-3">get in</span> touch with
+            us
+          </h3>
+          <p class="text-white" id="text-contact">Sign up and get an invite to download our exclusive app and join the
+            club</p>
+          <div class="input-group mb-3 pr-2 pr-md-0">
+            <input type="text" class="form-control py-4 border-0" placeholder="Enter your email address">
+            <div class="input-group-append">
+              <span class="input-group-text px-4 btn-gold border-0 text-white text-capitalize">join now</span>
+            </div>
+          </div>
+        </div>
+        <div>
+          <img src="assets/images/Group-151.svg" alt="" loading="lazy" class="img-fluid">
+        </div>
+      </div>
+    </section>
+    <!-- quote -->
+    <section id="bg-image">
+      <div class="d-flex flex-column justify-content-center align-items-center h-100">
+        <h2 class="text-capitalize text-white text-center" id="quote">
+          <img src="assets/images/open-quote.svg" alt="open quote" loading="lazy" class="img-fluid mr-2">
+          A Journey Of A Thousand Miles Begins With A Single Step
+          <img src="assets/images/close-quote.svg" alt="close quote" loading="lazy" class="img-fluid">
+        </h2>
+        <p class="text capitalize" id="quote-name">- lao tzu -</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- footer -->
+  <footer class="d-flex flex-md-row flex-column justify-content-between align-items-md-center px-6 py-6" id="footer">
+    <div>
+      <a href="">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M16.0017 2.66919C8.63901 2.66919 2.66968 8.63852 2.66968 16.0012C2.66968 22.6545 7.54434 28.1692 13.919 29.1732V19.8559H10.5323V16.0012H13.919V13.0639C13.919 9.71986 15.9097 7.87586 18.9537 7.87586C20.4123 7.87586 21.9403 8.13586 21.9403 8.13586V11.4145H20.255C18.6017 11.4145 18.0843 12.4439 18.0843 13.4985V15.9985H21.779L21.1883 19.8532H18.0843V29.1705C24.459 28.1719 29.3337 22.6559 29.3337 16.0012C29.3337 8.63852 23.3643 2.66919 16.0017 2.66919Z"
+            fill="#EFEFEF" />
+        </svg>
+      </a>
+      <a href="">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M16 2C8.26875 2 2 8.26875 2 16C2 23.7313 8.26875 30 16 30C23.7313 30 30 23.7313 30 16C30 8.26875 23.7313 2 16 2ZM22.7281 12.5531C22.7375 12.7 22.7375 12.8531 22.7375 13.0031C22.7375 17.5906 19.2437 22.875 12.8594 22.875C10.8906 22.875 9.06562 22.3031 7.52812 21.3188C7.80937 21.35 8.07813 21.3625 8.36563 21.3625C9.99063 21.3625 11.4844 20.8125 12.675 19.8813C11.15 19.85 9.86875 18.85 9.43125 17.475C9.96562 17.5531 10.4469 17.5531 10.9969 17.4125C10.2116 17.253 9.50586 16.8265 8.99943 16.2056C8.49299 15.5846 8.21715 14.8075 8.21875 14.0063V13.9625C8.67812 14.2219 9.21875 14.3812 9.78438 14.4031C9.30888 14.0862 8.91893 13.6569 8.6491 13.1532C8.37926 12.6495 8.23789 12.087 8.2375 11.5156C8.2375 10.8687 8.40625 10.2781 8.70938 9.76562C9.58095 10.8386 10.6685 11.7161 11.9015 12.3411C13.1344 12.9662 14.485 13.3249 15.8656 13.3938C15.375 11.0344 17.1375 9.125 19.2563 9.125C20.2563 9.125 21.1562 9.54375 21.7906 10.2188C22.575 10.0719 23.325 9.77812 23.9937 9.38437C23.7344 10.1875 23.1906 10.8656 22.4688 11.2937C23.1688 11.2188 23.8438 11.025 24.4688 10.7531C23.9969 11.4469 23.4062 12.0625 22.7281 12.5531Z"
+            fill="#EFEFEF" />
+        </svg>
+      </a>
+      <a href="">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M21.3333 16C21.3333 14.5278 20.8125 13.2708 19.7708 12.2292C18.7292 11.1875 17.4722 10.6667 16 10.6667C14.5278 10.6667 13.2708 11.1875 12.2292 12.2292C11.1875 13.2708 10.6667 14.5278 10.6667 16C10.6667 17.4722 11.1875 18.7292 12.2292 19.7708C13.2708 20.8125 14.5278 21.3333 16 21.3333C17.4722 21.3333 18.7292 20.8125 19.7708 19.7708C20.8125 18.7292 21.3333 17.4722 21.3333 16ZM24.2083 16C24.2083 18.2778 23.4097 20.2153 21.8125 21.8125C20.2153 23.4097 18.2778 24.2083 16 24.2083C13.7222 24.2083 11.7847 23.4097 10.1875 21.8125C8.59028 20.2153 7.79167 18.2778 7.79167 16C7.79167 13.7222 8.59028 11.7847 10.1875 10.1875C11.7847 8.59028 13.7222 7.79167 16 7.79167C18.2778 7.79167 20.2153 8.59028 21.8125 10.1875C23.4097 11.7847 24.2083 13.7222 24.2083 16ZM26.4583 7.45833C26.4583 7.98611 26.2708 8.4375 25.8958 8.8125C25.5208 9.1875 25.0694 9.375 24.5417 9.375C24.0139 9.375 23.5625 9.1875 23.1875 8.8125C22.8125 8.4375 22.625 7.98611 22.625 7.45833C22.625 6.93056 22.8125 6.47917 23.1875 6.10417C23.5625 5.72917 24.0139 5.54167 24.5417 5.54167C25.0694 5.54167 25.5208 5.72917 25.8958 6.10417C26.2708 6.47917 26.4583 6.93056 26.4583 7.45833ZM16 2.875C15.9028 2.875 15.3715 2.87153 14.4062 2.86458C13.441 2.85764 12.7083 2.85764 12.2083 2.86458C11.7083 2.87153 11.0382 2.89236 10.1979 2.92708C9.35764 2.96181 8.64236 3.03125 8.05208 3.13542C7.46181 3.23958 6.96528 3.36806 6.5625 3.52083C5.86806 3.79861 5.25694 4.20139 4.72917 4.72917C4.20139 5.25694 3.79861 5.86806 3.52083 6.5625C3.36806 6.96528 3.23958 7.46181 3.13542 8.05208C3.03125 8.64236 2.96181 9.35764 2.92708 10.1979C2.89236 11.0382 2.87153 11.7083 2.86458 12.2083C2.85764 12.7083 2.85764 13.441 2.86458 14.4062C2.87153 15.3715 2.875 15.9028 2.875 16C2.875 16.0972 2.87153 16.6285 2.86458 17.5938C2.85764 18.559 2.85764 19.2917 2.86458 19.7917C2.87153 20.2917 2.89236 20.9618 2.92708 21.8021C2.96181 22.6424 3.03125 23.3576 3.13542 23.9479C3.23958 24.5382 3.36806 25.0347 3.52083 25.4375C3.79861 26.1319 4.20139 26.7431 4.72917 27.2708C5.25694 27.7986 5.86806 28.2014 6.5625 28.4792C6.96528 28.6319 7.46181 28.7604 8.05208 28.8646C8.64236 28.9688 9.35764 29.0382 10.1979 29.0729C11.0382 29.1076 11.7083 29.1285 12.2083 29.1354C12.7083 29.1424 13.441 29.1424 14.4062 29.1354C15.3715 29.1285 15.9028 29.125 16 29.125C16.0972 29.125 16.6285 29.1285 17.5938 29.1354C18.559 29.1424 19.2917 29.1424 19.7917 29.1354C20.2917 29.1285 20.9618 29.1076 21.8021 29.0729C22.6424 29.0382 23.3576 28.9688 23.9479 28.8646C24.5382 28.7604 25.0347 28.6319 25.4375 28.4792C26.1319 28.2014 26.7431 27.7986 27.2708 27.2708C27.7986 26.7431 28.2014 26.1319 28.4792 25.4375C28.6319 25.0347 28.7604 24.5382 28.8646 23.9479C28.9688 23.3576 29.0382 22.6424 29.0729 21.8021C29.1076 20.9618 29.1285 20.2917 29.1354 19.7917C29.1424 19.2917 29.1424 18.559 29.1354 17.5938C29.1285 16.6285 29.125 16.0972 29.125 16C29.125 15.9028 29.1285 15.3715 29.1354 14.4062C29.1424 13.441 29.1424 12.7083 29.1354 12.2083C29.1285 11.7083 29.1076 11.0382 29.0729 10.1979C29.0382 9.35764 28.9688 8.64236 28.8646 8.05208C28.7604 7.46181 28.6319 6.96528 28.4792 6.5625C28.2014 5.86806 27.7986 5.25694 27.2708 4.72917C26.7431 4.20139 26.1319 3.79861 25.4375 3.52083C25.0347 3.36806 24.5382 3.23958 23.9479 3.13542C23.3576 3.03125 22.6424 2.96181 21.8021 2.92708C20.9618 2.89236 20.2917 2.87153 19.7917 2.86458C19.2917 2.85764 18.559 2.85764 17.5938 2.86458C16.6285 2.87153 16.0972 2.875 16 2.875ZM32 16C32 19.1806 31.9653 21.3819 31.8958 22.6042C31.7569 25.4931 30.8958 27.7292 29.3125 29.3125C27.7292 30.8958 25.4931 31.7569 22.6042 31.8958C21.3819 31.9653 19.1806 32 16 32C12.8194 32 10.6181 31.9653 9.39583 31.8958C6.50694 31.7569 4.27083 30.8958 2.6875 29.3125C1.10417 27.7292 0.243056 25.4931 0.104167 22.6042C0.0347222 21.3819 0 19.1806 0 16C0 12.8194 0.0347222 10.6181 0.104167 9.39583C0.243056 6.50694 1.10417 4.27083 2.6875 2.6875C4.27083 1.10417 6.50694 0.243056 9.39583 0.104167C10.6181 0.0347222 12.8194 0 16 0C19.1806 0 21.3819 0.0347222 22.6042 0.104167C25.4931 0.243056 27.7292 1.10417 29.3125 2.6875C30.8958 4.27083 31.7569 6.50694 31.8958 9.39583C31.9653 10.6181 32 12.8194 32 16Z"
+            fill="#EFEFEF" />
+        </svg>
+      </a>
+    </div>
+    <div>
+      <p class="text-white mt-4 mt-md-0">Copyright. MedBuzz 2020. All rights reserved.</p>
+    </div>
+    <div>
+      <p class="text-white">Terms of service/Privacy policy.</p>
+    </div>
+  </footer>
+
+
+  <!-- UIkit JS -->
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.5/dist/js/uikit.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.5/dist/js/uikit-icons.min.js"></script>
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- bootstrap -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
