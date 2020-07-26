@@ -188,12 +188,14 @@
           </h3>
           <p class="text-white" id="text-contact">Sign up and get an invite to download our exclusive app and join the
             club</p>
-          <div class="input-group mb-3 pr-2 pr-md-0">
-            <input type="text" class="form-control py-4 border-0" placeholder="Enter your email address">
-            <div class="input-group-append">
-              <span class="input-group-text px-4 btn-gold border-0 text-white text-capitalize">join now</span>
-            </div>
-          </div>
+            <form name="contact" method="post" data-netlify="true">
+              <div class="input-group mb-3 pr-2 pr-md-0">
+                <input type="text" name="email" class="form-control py-4 border-0" placeholder="Enter your email address">
+                <div class="input-group-append">
+                  <button type="submit" class="input-group-text px-4 btn-gold border-0 text-white text-capitalize">join now</button>
+                </div>
+              </div>
+            </form>
         </div>
         <div>
           <img src="assets/images/Group-151.svg" alt="" loading="lazy" class="img-fluid">
