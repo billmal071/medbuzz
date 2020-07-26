@@ -208,6 +208,10 @@ input[type="text"] {
     background-color: var(--medbuzz-gold) !important;
 }
 
+.show-error {
+    display: block;
+}
+
 /* quote */
 #bg-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/Group-138.png");
