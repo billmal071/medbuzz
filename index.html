@@ -221,7 +221,7 @@
             club</p>
             <form name="contact" method="post" action="/" data-netlify="true">
               <div class="input-group mb-3 pr-2 pr-md-0">
-                <input type="text" name="email" class="form-control py-4 border-0" placeholder="Enter your email address">
+                <input type="text" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required class="form-control py-4 border-0" placeholder="Enter your email address">
                 <div class="input-group-append">
                   <button type="submit" class="input-group-text px-4 btn-gold border-0 text-white text-capitalize">join now</button>
                 </div>
