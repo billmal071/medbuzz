@@ -15,6 +15,7 @@ html {
 
 body {
     font-family: 'Playfair Display', serif;
+    overflow-x: hidden;
 }
 
 /* custom scroll */
@@ -49,8 +50,13 @@ img {
 #logo {
     color: var(--medbuzz-blue);
     font-style: normal;
+    font-weight: 100;
     font-size: 36px;
     line-height: 48px;
+}
+
+.bg-dark-blue {
+    background-color: var(--medbuzz-dark-blue);
 }
 
 #download-btn {
@@ -68,7 +74,7 @@ img {
     background-color: var(--medbuzz-dark-blue);
 }
 
-/* description */
+/* medbuzz info */
 .pt-6 {
     padding-top: 220px;
 }
@@ -96,6 +102,7 @@ img {
     font-weight: normal;
     font-size: 18px;
     line-height: 29px;
+    margin-top: 48px;
 }
 
 .btn {
@@ -134,23 +141,6 @@ img {
     position: relative;
     top: -120px;
     z-index: 3;
-    width: 1500px;
-    height: 100%;
-}
-
-#posimg-2,
-#posimg-3 {
-    position: relative;
-}
-
-#posimg-2 {
-    left: 1010px;
-    top: 221px;
-}
-
-#posimg-3 {
-    left: 788px;
-    top: 445px;
 }
 
 /* key features */
@@ -185,6 +175,11 @@ img {
     color: var(--medbuzz-blue);
 }
 
+/* how the app works */
+.text-box {
+    width: 376px;
+}
+
 /* contact */
 .bg-blue {
     background-color: var(--medbuzz-blue);
@@ -196,6 +191,8 @@ img {
     font-weight: normal;
     font-size: 24px;
     line-height: 36px;
+    margin-top: 50px;
+    margin-bottom: 48px;
 }
 
 input[type="text"] {
@@ -228,7 +225,7 @@ input[type="text"] {
     font-size: 36px;
     line-height: 48px;
     text-align: center;
-    width: 524px;
+    width: 600px;
 }
 
 #quote-name {
@@ -307,6 +304,7 @@ input[type="text"] {
 
     .btn-gray {
         font-size: 10px;
+        display: none;
     }
 
     .btn-white {
@@ -335,6 +333,10 @@ input[type="text"] {
         text-align: left !important;
     }
 
+    .text-box {
+        width: 280px;
+    }
+
     /* contact */
     .text-header {
         font-size: 24px;
@@ -343,6 +345,8 @@ input[type="text"] {
     #text-contact {
         font-size: 18px;
         line-height: 20px;
+        margin-top: 0;
+        margin-bottom: 10px;
     }
 
     /* quote */
@@ -399,7 +403,7 @@ input[type="text"] {
     }
 }
 
-@media only screen and (max-width: 1024px) and (min-width: 769px) {
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
 
     /* medbuzz */
     .pt-6 {
@@ -416,7 +420,25 @@ input[type="text"] {
     }
 }
 
-@media only screen and (max-width: 850px) and (min-width: 769px) {
+@media only screen and (max-width: 920px) and (min-width: 768px) {
+
+    /* medbuzz info */
+    #hero-description {
+        margin-top: 20px;
+    }
+
+    .btn-gray {
+        display: none;
+    }
+
+    .btn-white {
+        font-size: 12px;
+    }
+
+    /* key features */
+    .text-blue {
+        font-size: 16px;
+    }
 
     /* contact */
     .text-header {
