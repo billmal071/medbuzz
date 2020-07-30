@@ -212,18 +212,20 @@
     <!-- contact -->
     <section class="bg-blue">
       <div class="d-flex flex-md-row flex-column justify-content-center pl-md-5 px-3">
-        <div class="align-self-center pl-md-4 pl-2" data-aos="flip-up">
+        <div class="align-self-center pl-md-4 pl-2" id="contact" data-aos="flip-up">
           <h3 class="text-capitalize text-white text-header mt-3 mb-4"><span id="border-bottom-3">get in</span> touch
             with
             us
           </h3>
           <p class="text-white" id="text-contact">Sign up and get an invite to download our exclusive app and join the
             club</p>
-          <form name="contact" method="post" action="assets/success.html" data-netlify="true">
+          <form name="contact" method="post" action="/#contact" data-netlify="true">
             <div class="input-group mb-3 pr-2 pr-md-0">
-              <input type="email" name="email" pattern="[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required class="form-control py-4 border-0" id="emailTxt" placeholder="Enter your email address">
+              <input type="email" name="email" pattern="[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required
+                class="form-control py-4 border-0" id="emailTxt" placeholder="Enter your email address">
               <div class="input-group-append">
-                <button type="submit" class="input-group-text px-4 btn-gold border-0 text-white text-capitalize" id="submitBtn">join
+                <button type="submit" class="input-group-text px-4 btn-gold border-0 text-white text-capitalize"
+                  id="submitBtn">join
                   now</button>
               </div>
             </div>
@@ -235,6 +237,38 @@
         </div>
         <div data-aos="flip-down">
           <img src="assets/images/Component-2.svg" alt="" loading="lazy" class="img-fluid">
+        </div>
+      </div>
+
+      <!-- The submission Modal -->
+      <div class="modal" id="emailSuccess">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <!-- Modal body -->
+            <div class="modal-body">
+              Thanks for your submission
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- The email match Modal -->
+      <div class="modal" id="emailMatch">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <!-- Modal body -->
+            <div class="modal-body" id="submission">
+              
+            </div>
+          </div>
         </div>
       </div>
     </section>
