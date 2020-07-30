@@ -407,11 +407,11 @@ input[type="text"] {
     }
 }
 
-@media only screen and (max-width: 1024px) and (min-width: 768px) {
+@media only screen and (max-width: 1200px) and (min-width: 768px) {
 
     /* medbuzz */
     .pt-6 {
-        padding-top: 100px;
+        padding-top: 90px;
     }
 
     #hero-text {
@@ -420,7 +420,7 @@ input[type="text"] {
     }
 
     #posimg-1 {
-        top: -50px;
+        top: -20px;
     }
 }
 
